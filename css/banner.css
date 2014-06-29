@@ -1,0 +1,15 @@
+
+/* Customize the Banner */
+.banner {
+  margin: 0;
+  padding: 0;
+  position: top center;
+  background-color: #333;
+  height: 250px;
+  overflow: hidden;
+}
+.banner img {
+    position: top center;
+    margin-top: 0px;
+    margin-left: -95px;
+}
