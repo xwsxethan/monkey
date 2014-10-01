@@ -3,8 +3,9 @@
 /* Padding below the footer and lighter body text */
 
 body {
-  padding-bottom: 40px;
+  padding-bottom: 0px;
   color: #5a5a5a;
+  background-color: #777;
 }
 
 
@@ -13,8 +14,8 @@ body {
 
 /* Carousel base class */
 .carousel {
-  height: 500px;
-  margin-bottom: 60px;
+  height: 800px;
+  margin-bottom: 0px;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -23,15 +24,33 @@ body {
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 500px;
+  height: 800px;
   background-color: #777;
 }
+
 .carousel-inner > .item > img {
   position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 500px;
+  top: 0%;
+  left: 50%;
+  margin-left: -120px;
+  margin-right: auto;
+  min-width: none;
+  max-width: none;
+}
+
+.carousel-graduation-img {
+  height: 640px;
+  width: 360px;
+}
+
+.carousel-cloudtwin-img {
+  height: 533px;
+  width: 800px;
+}
+
+.carousel-vt-img {
+  height: 540px;
+  width: 720px;
 }
 
 
