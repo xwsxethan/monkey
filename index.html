@@ -6,18 +6,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="">
 		<meta name="author" content="">
-		<title>Homepage Mock</title>
+		<title>Ethan Holder</title>
 
 		<!-- Bootstrap core CSS -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
 
 		<!-- Custom styles for this template -->
 		<link href="css/banner.css" rel="stylesheet">
 		<link href="css/navbar.css" rel="stylesheet">
 		<link href="css/carousel.css" rel="stylesheet">
 
-		<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-		<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 		<script src="js/ie-emulation-modes-warning.js"></script>
 
 		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
@@ -29,58 +28,29 @@
 			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 		<style type="text/css"></style>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<script src="js/docs.min.js"></script>
 	</head>
 	<body>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$.ajax({
+					context: this,
+					dataType : "html",
+					url : "navbar.htm",
+					success : function(results) {
+						$('#navholder').html(results);
+					}
+				});
+			});
+		</script>
 		<!-- Static navbar -->
-		<div class="navbar navbar-inverse navbar-static-top" role="navigation">
-			<div class="container">
-				<!-- <div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#">Project name</a>
-				</div> -->
-				<div class="navbar-collapse collapse">
-					<ul class="nav navbar-nav">
-						<li class="active"><a href="index.html">Home</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
-					<ul class="nav navbar-nav navbar-right">
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Places to Find Me<span class="caret"></span></a>
-							<ul class="dropdown-menu" role="menu">
-								<!-- <li><a href="https://www.facebook.com/eholder0">Facebook</a></li> -->
-								<li><a href="https://github.com/xwsxethan">Github</a></li>
-								<li><a href="https://plus.google.com/+EthanHolder0/about">Google+</a></li>
-								<li><a href="http://scholar.google.com/citations?user=_4tTfUMAAAAJ">Google Scholar</a></li>								
-								<li><a href="http://www.linkedin.com/pub/ethan-holder/75/64b/280">LinkedIn</a></li>
-								<li><a href="http://stackoverflow.com/users/2216222/eholder0">StackOverflow</a></li>
-							</ul>
-						</li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">R&egrave;sum&egrave;/CV<span class="caret"></span></a>
-							<ul class="dropdown-menu" role="menu">
-								<li><a href="Resume.pdf">R&egrave;sum&egrave;</a></li>
-								<li><a href="CV.pdf">CV</a></li>
-								<li class="divider"></li>
-								<li><a href="#">References ... To Be Added</a></li>
-							</ul>
-						</li>
-					</ul>
-				</div><!--/.nav-collapse -->
-			</div>
-		</div>
+		<div id="navholder"></div>
 		
 		<!-- <div class="banner">
 			<img src="img/VT-Banner.jpg">
 		</div> -->
+		
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 		<!-- Indicators -->
 			<ol class="carousel-indicators">
@@ -92,8 +62,8 @@
 				<div class="item">
 					<div class="container">
 						<div class="carousel-caption">
-							<img class="carousel-graduation-img" src="img/Graduation01.jpg" alt="Graduation">
-							<h1>Bachelor's Graduation in May 2014</h1>
+							<img class="carousel-img" src="img/Graduation01.jpg" alt="Graduation">
+							<h2>Bachelor's Graduation in May 2014</h2>
 							<p>I graduated from Virginia Tech with my Bachelor's degree in Honors in May 2014 for Computer Science.</p>
 							<!-- <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p> -->
 						</div>
@@ -102,8 +72,8 @@
 				<div class="item">
 					<div class="container">
 						<div class="carousel-caption">
-							<img class="carousel-cloudtwin-img" src="img/CloudTwin02.jpg" alt="Cloud Twin">
-							<h1>Presenting Cloud Twin with Dr. Tilevich and Eeshan Shah</h1>
+							<a href="CloudTwin.html"><img class="carousel-img" src="img/CloudTwin02.jpg" alt="Cloud Twin"></a>
+							<h2>Presenting Cloud Twin with Dr. Tilevich and Mr. Shah</h2>
 							<p>Cloud Twin was my first research project under Dr. Eli Tilevich. This was our first presentation at VTURCS.</p>
 						</div>
 					</div>
@@ -111,17 +81,18 @@
 				<div class="item active">
 					<div class="container">
 						<div class="carousel-caption">
-							<img class="carousel-vt-img" src="img/Football.jpg" alt="Virginia Tech">
-							<h1>Virginia Tech Football Game</h1>
-							<p>I attended Virginia Tech (VT) from 2010-2014 as an undergrad and am currently finishing my Master's degree in Computer Science.</p>
+							<img class="carousel-img" src="img/Football.jpg" alt="Virginia Tech">
+							<h2>Virginia Tech Football Game</h2>
+							<p>I attended Virginia Tech (VT) from 2010-2014 as an undergrad and am currently finishing my Master's 
+							degree in Computer Science.</p>
 						</div>
 					</div>
 				</div>
 			</div>
 			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"
-			<span class="glyphicon glyphicon-white-chevron-left"></span></a>
+				<span class="glyphicon glyphicon-white-chevron-left"></span></a>
 			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"
-			<span class="glyphicon glyphicon-white-chevron-right"></span></a>
+				<span class="glyphicon glyphicon-white-chevron-right"></span></a>
 		</div>
 		<script src="js/docs.min.js"/>
 	</body>

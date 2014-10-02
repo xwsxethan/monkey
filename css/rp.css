@@ -1,0 +1,13 @@
+
+/* Customize the Panel */
+.research-interest {
+  margin:0 auto;
+  position: top center;
+  left: 50%;
+  max-width: 750px;
+  float:none;
+}
+
+
+.research-interest> h1 {
+} 

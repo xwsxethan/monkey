@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<title>Cloud Twin Research Project</title>
+
+		<!-- Bootstrap core CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+
+		<!-- Custom styles for this template -->
+		<link href="css/banner.css" rel="stylesheet">
+		<link href="css/navbar.css" rel="stylesheet">
+		<link href="css/carousel.css" rel="stylesheet">
+
+		<script src="js/ie-emulation-modes-warning.js"></script>
+
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+		<script src="js/ie10-viewport-bug-workaround.js"></script>
+
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<style type="text/css"></style>
+		<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<link href="css/rp.css" rel="stylesheet">
+	</head>
+	<body>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$.ajax({
+					context: this,
+					dataType : "html",
+					url : "navbar.htm",
+					success : function(results) {
+						$('#navholder').html(results);
+					}
+				});
+			});
+		</script>
+		<!-- Static navbar -->
+		<div id="navholder"></div>
+		
+		<div class="research-interest panel panel-primary center">
+			<div class="panel-heading"><h1 class="text-center">Cloud Twin</h1></div>
+			<div class="panel-body">
+				<p>
+				Cloud Twin was my very first research project as an undergraduate. I began working on it in
+				Spring of 2013 along with Mohammed Davoodi. Eeshan Shah had been working on the project for
+				some time, but was graduating that May so Mohammed and I were to take over after Eeshan left.
+				The three of us worked under Dr. Eli Tilevich to formulate a way to dynamically replay gui
+				events from one platform (Android) onto another (Windows Phone). What we were able to create
+				became known as Cloud Twin.
+				</p>
+				<p>
+				Below you can find the abstract for the papers we submitted to <a href="http://ase2013.org/">
+				Automated Software Engineering 2013 (ASE'13)</a> and <a href="http://splashcon.org/2013/">
+				Systems, Programming, Languages and Applications: Software for Humanity 2013 (SPLASH'13)</a>
+				as well as links to the full text and the source code.
+				</p>
+				<ul class="nav nav-tabs" role="tablist">
+					<li class="active"><a href="#abstract" role="tab" data-toggle="tab">Abstract</a></li>
+					<li><a href="#papers" role="tab" data-toggle="tab">Papers</a></li>
+					<li><a href="#sourcecode" role="tab" data-toggle="tab">Source Code</a></li>
+				</ul>
+				<div class="tab-content">
+					<div class="tab-pane fade in active" id="abstract">
+						<h3>Abstract</h3>
+						<p>
+						To successfully compete in the software marketplace, modern mobile applications must run on
+						multiple competing platforms, such as Android, iOS, and Windows Phone. Companies producing
+						mobile applications spend substantial amounts of time, effort, and money to port
+						applications across platforms. Creating individual program versions for different platforms
+						further exacerbates the maintenance burden. This paper presents Cloud Twin, a novel approach
+						to natively executing the functionality of a mobile application written for another platform.
+						The functionality is accessed by means of dynamic cross-platform replay, in which the source
+						application's execution in the cloud is mimicked natively on the target platform. The
+						reference implementation of Cloud Twin natively emulates the behavior of Android applications
+						on a Windows Phone. Specifically, Cloud Twin transmits, via web sockets, the UI actions
+						performed on the Windows Phone to the cloud server, which then mimics the received actions on
+						the Android emulator. The UI updates on the emulator are efficiently captured by means of
+						Aspect Oriented Programming and sent back to be replayed on the Windows Phone. Our case
+						studies with third-party applications indicate that the Cloud Twin approach can become a
+						viable solution to the heterogeneity of the mobile application market.
+						</p>
+					</div>
+					<div class="tab-pane fade" id="papers">
+						<h3>Papers</h3>
+						<a href="http://dx.doi.org/10.1109/ASE.2013.6693119"><p>Automated Software Engineering 2013</p></a>
+						<a href="http://dx.doi.org/10.1145/2508075.2514879"><p>Systems, Programming, Languages and Applications: Software for Humanity 2013</p></a>
+					</div>
+					<div class="tab-pane fade" id="sourcecode">
+						<h3>Source Code</h3>
+						<a href="#">Github Source has not been made available yet.</a>
+					</div>
+				</div>
+			</div>
+		</div>	
+		
+		<script src="js/docs.min.js"/>
+	</body>
+</html>
