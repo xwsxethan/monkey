@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<title>Contact Information</title>
+
+		<!-- Bootstrap core CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+
+		<!-- Custom styles for this template -->
+		<link href="css/banner.css" rel="stylesheet">
+		<link href="css/navbar.css" rel="stylesheet">
+		<link href="css/carousel.css" rel="stylesheet">
+
+		<script src="js/ie-emulation-modes-warning.js"></script>
+
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+		<script src="js/ie10-viewport-bug-workaround.js"></script>
+
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<style type="text/css"></style>
+		<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<link href="css/rp.css" rel="stylesheet">
+	</head>
+	<body>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$.ajax({
+					context: this,
+					dataType : "html",
+					url : "navbar.htm",
+					success : function(results) {
+						$('#navholder').html(results);
+					}
+				});
+			});
+		</script>
+		<!-- Static navbar -->
+		<div id="navholder"></div>
+		
+		<div class="research-interest panel panel-success center">
+			<div class="panel-heading"><h1 class="text-center">Contact Info</h1></div>
+			<div class="panel-body">
+				<p>
+				You can reach me any time at either of the email addresses listed below. Alternatively,
+				feel free to reach out to me on any of the websites listed under "Places to Find Me"
+				on the navigation bar.
+				</p>
+				<h3>School</h3>
+				<p>eholder0@vt.edu</p>
+				<h3>Primary</h3>
+				<p>xwsxethan@gmail.com</p>
+			</div>
+		</div>	
+		
+		<script src="js/docs.min.js"/>
+	</body>
+</html>
