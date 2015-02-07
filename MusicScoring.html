@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<title>Musical Complexity Scoring Research Project</title>
+
+		<!-- Bootstrap core CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+
+		<!-- Custom styles for this template -->
+		<link href="css/banner.css" rel="stylesheet">
+		<link href="css/navbar.css" rel="stylesheet">
+		<link href="css/carousel.css" rel="stylesheet">
+
+		<script src="js/ie-emulation-modes-warning.js"></script>
+
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+		<script src="js/ie10-viewport-bug-workaround.js"></script>
+
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<style type="text/css"></style>
+		<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<link href="css/rp.css" rel="stylesheet">
+	</head>
+	<body>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$.ajax({
+					context: this,
+					dataType : "html",
+					url : "navbar.htm",
+					success : function(results) {
+						$('#navholder').html(results);
+					}
+				});
+			});
+		</script>
+		<!-- Static navbar -->
+		<div id="navholder"></div>
+		
+		<div class="research-interest panel panel-primary center">
+			<div class="panel-heading"><h1 class="text-center">Musical Complexity Scoring</h1></div>
+			<div class="panel-body">
+				<p>
+				Musical Complexity Scoring is my MS Thesis project at Virginia Tech. I began working on it in Spring of 2015 with guidance from <a href="http://people.cs.vt.edu/~tilevich/">Dr. Eli Tilevich</a>. The idea of the project is to specify some difficulty values for various musical elements, such as notes, intervals, articulations, dynamics, tempo, and key signature. By analyzing the MusicXML representation of pieces of music, we can aggregate how often each musical element occurs, and by applying the specified difficulty values, we can objectively determine the overall difficulty or complexity of the piece. This work has practical benefits for music educators and performers that often need to assess and match the difficulty of a certain piece to their playing level.
+				</p>
+				<p>Drs. <a href="http://www.performingarts.vt.edu/faculty-staff/view/amy-gillick">Amy Gillick</a> from the Music department at VT and <a href="http://www.icat.vt.edu/users/r-benjamin-knapp">R. Ben Knapp</a> from the CS department and Institute for Creativity, Arts, and Technology at VT are also advising on this work as well as my MS committee.</p>
+				<p>
+				Below you can find the abstract we submitted for the <a href="http://www.idrsociety.org/idr-day-2015/">2015 Interdisciplinary Research Day at VT (IDR'15)</a> as well as links to related papers on the project and the current source code.
+				</p>
+				<p>The currently active site for this work can be found <a href="http://mickey.cs.vt.edu">here</a>.</p>
+				<ul class="nav nav-tabs" role="tablist">
+					<li class="active"><a href="#abstract" role="tab" data-toggle="tab">Abstract</a></li>
+					<li><a href="#papers" role="tab" data-toggle="tab">Papers</a></li>
+					<li><a href="#sourcecode" role="tab" data-toggle="tab">Source Code</a></li>
+				</ul>
+				<div class="tab-content">
+					<div class="tab-pane fade in active" id="abstract">
+						<h3>Abstract</h3>
+						<h5>An Objective Assessment of Musical Complexity: Translating Music Pedagogy’s Deep Insights with Novel Computing Paradigms</h5>
+						<p> In the Western classical tradition, musicians play music from notated sheet music, called a score. When playing music from a score, a musician translates its visual symbols into sequences of instrument- specific physical motions. Hence, a music score’s overall complexity represents a sum of the mental and mechanical acuity required for its performance.</p>
+						<p>Musicians often debate and disagree about the relative complexity of music scores, while the ability to accurately assess a score's complexity is required for curricular recommendations, competition specifications, etc. Unfortunately, this non-trivial cognitive task depends solely on individual opinions, a process influenced by personal biases and lacking common criteria. Additionally, people buying sheet music face great uncertainty when determining whether unfamiliar music matches their playing ability. With combined expertise from the fields of Computer Science and Music Pedagogy, this project finally offers an objective solution to these debates.</p>
+						<p>At the technical level, this interdisciplinary research exploits a fundamental musical tenet that—for a given instrument—different notes, intervals, and key signatures represent dissimilar levels of difficulty, which vary depending on the performer's proficiency. Tempo, dynamics, and articulation also affect the overall difficulty. We have realized our approach as a two-phase process. First, music experts rank the relative difficulty of musical components for different playing proficiencies and instruments. Second, an automated algorithm applies this ranking to music scores and calculates their respective complexity. Once music experts agree upon the complexity ranking for a given level of proficiency, our approach automatically calculates a music score's relative difficulty. The results of this interdisciplinary research project will empower musicians to expeditiously assess a music score's suitability for the abilities of intended performers.</p>
+						<p>This project is the first attempt to create a systematic and objective approach to assessing the complexity of a music score. The approach leverages computing technologies to be able to automatically and accurately calculate the complexity of playing a music score on a given instrument. As a proof-of- concept of the approach, we have been developing an automated, Web-based application for music educators and performers. This interdisciplinary research creates novel computing paradigms that systematically translate deep insights of Music Pedagogy, benefiting a broad music audience. Although the end product of this research will largely benefit musicians, the created novel computing concepts and paradigms will enhance the state of the art in computing, being applicable to solving important problems in other domains.
+						</p>
+					</div>
+					<div class="tab-pane fade" id="papers">
+						<h3>Papers</h3>
+						<a href="#"><p>None yet, but we plan to submit to Onward 2015.</p></a>
+					</div>
+					<div class="tab-pane fade" id="sourcecode">
+						<h3>Source Code</h3>
+						<a href="https://github.com/xwsxethan/MusicScoring">Github Source</a>
+					</div>
+				</div>
+			</div>
+		</div>	
+		
+		<script src="js/docs.min.js"/>
+	</body>
+</html>
